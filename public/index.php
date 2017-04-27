@@ -15,7 +15,11 @@ set_include_path(implode(PATH_SEPARATOR, array(
 )));
 
 /** Zend_Application */
+<<<<<<< HEAD
 require_once 'library/Zend/Application.php';
+=======
+require_once 'Zend/Application.php';
+>>>>>>> 604fd110ee68ef9920d71ba3bd1dd8f547aa4481
 
 // Create application, bootstrap, and run
 $application = new Zend_Application(
@@ -23,4 +27,8 @@ $application = new Zend_Application(
     APPLICATION_PATH . '/configs/application.ini'
 );
 $application->bootstrap()
+<<<<<<< HEAD
             ->run();
+=======
+            ->run();
+>>>>>>> 604fd110ee68ef9920d71ba3bd1dd8f547aa4481
