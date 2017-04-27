@@ -1,3 +1,12 @@
 {
-	web: php -S 0.0.0.0:8000
+    "require": {
+        "php": ">=5.4.0",
+        "silex/silex": "~1.0@dev"
+    },
+    "extra": {
+        "heroku": {
+            "document-root": "public",
+            "index-document": "index.php"
+        }
+    }
 }
